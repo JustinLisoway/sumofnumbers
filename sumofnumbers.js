@@ -19,7 +19,7 @@ function sumWhile(list) {
 
 function sumRecursion(list) {
   if (list.length > 0) {
-    return list.pop() + sumRecursion(list);
+    return list[0] + sumRecursion(list.slice(1, list.length));
   }
   return 0;
 }
